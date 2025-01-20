@@ -283,3 +283,9 @@ body {
     height: 0.0625rem;
   }
 }
+
+@media only screen and (min-width: 769px) {
+  .card {
+    width: 41rem !important;
+  }
+}
