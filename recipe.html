@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <link rel="stylesheet" href="stylez.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Young Serif:wght@400&display=swap" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;600;700&display=swap" />
+  <title>Frontend Mentor | Recipe page</title>
+</head>
+<body>
+  <div class="card">
+    <div class="image" id="omelette-pic"></div>
+    <div class="text-content">
+      <div id="title">
+        <h1 id="headline">Simple Omelette Recipe</h1>
+        <p id="description">
+          An easy and quick dish, perfect for any meal. This classic omelette combines beaten eggs cooked to perfection, optionally filled with your choice of cheese, vegetables, or meats.
+        </p>
+      </div>
+      <div class="preparation">        
+        <h4>
+          Preparation time
+        </h4>
+        <ul>
+          <li>
+            <span class="bullet">
+              <svg xmlns="http://www.w3.org/2000/svg" width="4" height="4" viewBox="0 0 4 4" fill="none">
+                <circle cx="2" cy="2" r="2" fill="#7A284E"/>
+              </svg>
+            </span>
+            <span class="list"><span class="head">Total:</span> Approximately 10 minutes</span>
+          </li>
+          <li>
+            <span class="bullet">
+              <svg xmlns="http://www.w3.org/2000/svg" width="4" height="4" viewBox="0 0 4 4" fill="none">
+                <circle cx="2" cy="2" r="2" fill="#7A284E"/>
+              </svg>
+            </span>
+            <span class="list"><span class="head">Preparation:</span> 5 minutes</span>
+          </li>
+          <li>
+            <span class="bullet">
+              <svg xmlns="http://www.w3.org/2000/svg" width="4" height="4" viewBox="0 0 4 4" fill="none">
+                <circle cx="2" cy="2" r="2" fill="#7A284E"/>
+              </svg>
+            </span>
+            <span class="list"><span class="head">Cooking:</span> 5 minutes</span>
+          </li>
+        </ul>
+      </div> 
+      <div id="ingredients">
+        <h3>Ingredients</h3>
+        <ul>
+          <li>
+            <svg xmlns="http://www.w3.org/2000/svg" width="4" height="4" viewBox="0 0 4 4" fill="none">
+              <circle cx="2" cy="2" r="2" fill="#854632"/>
+            </svg>
+            <span class="list">2-3 large eggs</span></li>
+          <li>
+            <svg xmlns="http://www.w3.org/2000/svg" width="4" height="4" viewBox="0 0 4 4" fill="none">
+              <circle cx="2" cy="2" r="2" fill="#854632"/>
+            </svg>
+            <span class="list">
+            Salt, to taste</span></li>
+          <li>
+            <svg xmlns="http://www.w3.org/2000/svg" width="4" height="4" viewBox="0 0 4 4" fill="none">
+              <circle cx="2" cy="2" r="2" fill="#854632"/>
+            </svg>
+            <span class="list">
+            Pepper, to taste</span></li>
+          <li>
+            <svg xmlns="http://www.w3.org/2000/svg" width="4" height="4" viewBox="0 0 4 4" fill="none">
+              <circle cx="2" cy="2" r="2" fill="#854632"/>
+            </svg>
+            <span class="list">
+            1 tablespoon of butter or oil</span></li>
+          <li>
+            <svg xmlns="http://www.w3.org/2000/svg" width="4" height="4" viewBox="0 0 4 4" fill="none">
+              <circle cx="2" cy="2" r="2" fill="#854632"/>
+            </svg>
+            <span class="list">
+            Optional fillings: cheese, diced vegetables, cooked meats, herbs</span></li>
+        </ul>
+      </div>
+      <hr class="line">
+      <div id="instructions">
+        <h3>Instructions</h3>
+        <ul>
+          <li class="numbered"><span class="numbers">1.</span><span class="list"><span class="head">Beat the eggs:</span> In a bowl, beat the eggs with a pinch of salt and pepper until they are well mixed. 
+            You can add a tablespoon of water or milk for a fluffier texture.</span></li>
+    
+          <li class="numbered"><span class="numbers">2.</span><span class="list"><span class="head">Heat the pan:</span> Place a non-stick frying pan over medium heat and add butter or oil.</span></li>
+    
+          <li class="numbered"><span class="numbers">3.</span><span class="list"><span class="head">Cook the omelette:</span> Once the butter is melted and bubbling, pour in the eggs. Tilt the pan to ensure 
+            the eggs evenly coat the surface.</span></li>
+    
+          <li class="numbered"><span class="numbers">4.</span><span class="list"><span class="head">Add fillings (optional):</span> When the eggs begin to set at the edges but are still slightly runny in the 
+            middle, sprinkle your chosen fillings over one half of the omelette.</span></li>
+    
+          <li class="numbered"><span class="numbers">5.</span><span class="list"><span class="head">Fold and serve:</span> As the omelette continues to cook, carefully lift one edge and fold it over the 
+            fillings. Let it cook for another minute, then slide it onto a plate.</span></li>
+    
+          <li class="numbered"><span class="numbers">6.</span><span class="list"><span class="head">Enjoy:</span> Serve hot, with additional salt and pepper if needed.</span></li>
+        </ul>
+      </div>
+      <hr class="line"> 
+      <div id="nutrition"> 
+        <h3>Nutrition</h3>
+    
+        <p>The table below shows nutritional values per serving without the additional fillings.</p>
+
+        <table id="table">
+          <tr>
+            <td class="type">Calories</td>
+            <td class="amount">277kcal</td>
+          </tr>
+          <tr class="hr-row">
+            <td colspan="2"><hr></td>
+          </tr>
+          <tr>
+            <td class="type">Carbs</td>
+            <td class="amount">0g</td>
+          </tr>
+          <tr class="hr-row">
+            <td colspan="2"><hr></td>
+          </tr>
+          <tr>
+            <td class="type">Protein</td>
+            <td class="amount">20g</td>
+          </tr>
+          <tr class="hr-row">
+            <td colspan="2"><hr></td>
+          </tr>
+          <tr>
+            <td class="type">Fat</td>
+            <td class="amount">22g</td>
+          </tr>
+        </table>
+
+
+        <!--<div id="table">
+          <div class="wtf">
+            <div class="type">Calories</div>
+          </div>
+          <div class="wtf">
+            <div class="amount">277kcal</div>
+          </div><br />
+          <vr class="tline">
+          <div class="wtf">
+            <div class="type">Carbs</div>
+          </div>
+          <div class="wtf">
+            <div class="amount">0g</div>
+          </div>
+          <hr class="line">
+          <div class="wtf">
+            <div class="type">Protein</div>
+          </div>
+          <div class="wtf">
+            <div class="amount">20g</div>
+          </div>
+          <hr class="line">
+          <div class="wtf">
+            <div class="type">Fat</div>
+          </div>
+          <div class="wtf">
+            <div class="amount">22g</div>
+          </div>-->
+        </table>
+      </div>
+    </div>
+  </div>
+  
+  
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" rel="noopener" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">S.Payne</a>.
+  </div>
+</body>
+</html>

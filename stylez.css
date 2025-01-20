@@ -1,0 +1,285 @@
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.attribution {
+  padding: 0.5rem 0rem;
+  font-size: 11px;
+  text-align: center; 
+}
+
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+:root {
+  --white: #FFFFFF;
+  --rose-50: #FFF7FB;
+  --rose-800: #7A284E;
+  --brown-800: #854632;
+  --stone-100: #F3E6D8;
+  --stone-150: #E3DDD7;
+  --stone-600: #5F564D;
+  --stone-900: #312E2C;
+
+  --space-1600: 128px;
+  --space-600: 48px;
+  --space-500: 40px;
+  --space-400: 32px;
+  --space-300: 24px;
+  --space-200: 16px;
+  --space-150: 12px;
+  --space-100: 8px;
+
+  height: 100%;
+  max-height: 100%;
+  width: 100%;
+  max-width: 100;
+  font-size: 16px;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  max-width: 100%;
+  overflow-x: hidden;
+  background-color: var(--stone-100);
+}
+
+.card {
+  display: flex;
+  width: 100%;
+  height: auto;
+}
+
+#omelette-pic {
+  display: flex;
+  background: url(assets/images/image-omelette.jpeg);
+  background-color: lightgray;
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100%;
+  align-self: stretch;
+}
+
+.line { 
+  background: var(--stone-150);
+}
+
+@media only screen and (min-width: 375px) {
+  .card {
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    background-color: var(--white);
+    max-width: 23.4375rem;
+    max-height: 127.6875rem;
+  }
+
+  #omelette-pic {
+    height: 10.6875rem;
+  }
+
+  .text-content {
+    display: flex;
+    padding: var(--space-500) var(--space-400);
+    flex-direction: column;
+    align-items: flex-start;
+    gap: var(--space-400);
+    align-self: stretch;
+  }
+
+  #title {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: var(--space-300);
+    align-self: stretch;
+  }
+
+  h1 {
+    align-self: stretch;
+    color: var(--stone-900);
+    font-family: "Young Serif Regular", serif;
+    font-size: 2.25rem;
+    font-weight: 400;
+    line-height: 100%;
+  }
+
+  .preparation {
+    display: flex;
+    padding: var(--space-300);
+    flex-direction: column;
+    align-items: flex-start;
+    gap: var(--space-200);
+    align-self: stretch;
+    border-radius: var(--space-150);
+    background: var(--rose-50);
+  }
+
+  h4 {
+    align-self: stretch;
+    color: var(--rose-800);
+    font-family: Outfit, sans-serif;
+    font-size: 1.25rem;
+    font-weight: 600;
+    line-height: 100%;
+  }
+
+  ul {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: var(--space-100);
+    align-self: stretch;
+  }
+
+  li {
+    display: flex;
+    padding-left: var(--space-100);
+    align-items: center;
+    gap: var(--space-200);
+    align-self: stretch;
+  }
+
+  .bullet {
+    display: flex;
+    width: var(--space-200);
+    align-items: center;
+    gap: var(--space-100);
+    align-self: stretch;
+  }
+
+  .list, p, .type, .amount {
+    flex: 1 0 0;
+    color: var(--stone-600);
+    font-family: Outfit, sans-serif;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 150%;
+  }
+
+  p {
+    align-self: stretch;
+  }
+
+  .head {
+    font-weight: 700;
+  }
+
+  #ingredients, #instructions, #nutrition {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: var(--space-300);
+    align-self: stretch;
+  }
+
+  h3 {
+    align-self: stretch;
+    color: var(--brown-800);
+    font-family: "Young Serif Regular", serif;
+    font-weight: 400;
+    line-height: 100%;
+    font-size: 1.75rem;
+  }
+
+  .line {
+    width: 19.4375rem;
+    height: 0.0625rem;
+  }
+
+  .numbered {
+    align-items: flex-start;
+  }
+
+  .numbers, .amount {
+    width: var(--space-200);
+    color: var(--brown-800);
+    font-family: Outfit, sans-serif;
+    font-size: 1rem;
+    font-weight: 700;
+    line-height: 150%;
+  }
+
+  #table {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.75rem;
+    align-self: stretch;
+    width: 100%;
+  }
+
+  tr {
+    display: flex;
+    padding: 0rem 2rem;
+    align-items: center;
+    gap: 1rem;
+    align-self: stretch;
+  }
+
+  .hr-row {
+    padding: 0.75rem 0rem;
+    
+  }
+
+  hr {
+    width: 19.4375rem;
+    height: 0.0625rem;
+    background: var(--stone-150);
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  body {
+    padding: 8rem 3rem;
+    gap: 0.5rem;
+  }
+
+  .card {
+    max-width: 38.5rem;
+    padding: 2.5rem;
+    gap: 2.5rem;
+    flex: 1 0 0;
+    border-radius: 2.5rem;
+  }
+
+  #omelette-pic {
+    height: 18.75rem;
+    border-radius: 0.75rem;
+    background-position: center;
+    margin: 0;
+    padding: 0;
+  }
+
+  .text-content {
+    padding: 0;
+  }
+
+  h1 {
+    font-size: 2.5rem;
+  }
+
+  .line {
+    width: 33.5rem;
+  }
+
+  #table {
+    max-width: 33.5rem;
+  }
+
+  .hr-row {
+    width: 33.5rem !important;
+  }
+
+  hr {
+    width: 33.5rem;
+    height: 0.0625rem;
+  }
+}
